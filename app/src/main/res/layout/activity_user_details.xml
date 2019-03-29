@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".UserDetailsActivity">
+
+    <ImageView
+        android:id="@+id/ivImageDetails"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/tvNameDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tvWhoDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Who"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvMobileDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="25sp" />
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="15dp">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/civImage"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/ic_launcher_round"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/civImage"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/civImage"
+            android:layout_toRightOf="@+id/civImage"
+            android:ellipsize="marquee"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvWho"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvName"
+            android:layout_alignStart="@+id/tvName"
+            android:layout_below="@+id/tvName"
+            android:layout_marginRight="15dp"
+            android:text="Who"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvName"
+            android:layout_alignStart="@+id/tvName"
+            android:layout_below="@+id/tvWho"
+            android:layout_marginRight="15dp"
+            android:text="Mobile"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
